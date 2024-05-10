@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ffcb05443c495f9ee3a50adc07a001d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ffcb05443c495f9ee3a50adc07a001d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ffcb05443c495f9ee3a50adc07a001d = L.map(
+                "map_4ffcb05443c495f9ee3a50adc07a001d",
+                {
+                    center: [38.7223, -9.1393],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdc750ee0d6f025eff46da75bd071acb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bdc750ee0d6f025eff46da75bd071acb.addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var marker_5566edae3ac44f68889d8acd718d6da6 = L.marker(
+                [38.7561, -9.17093],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_46f8c353f640c257d1a8246264bdffdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5566edae3ac44f68889d8acd718d6da6.setIcon(icon_46f8c353f640c257d1a8246264bdffdd);
+        
+    
+        var popup_7e70619d1ee6df9a7e40b266c5e447f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01dbc7a18e4323d6db1268bbd6eb8492 = $(`<div id="html_01dbc7a18e4323d6db1268bbd6eb8492" style="width: 100.0%; height: 100.0%;">Address: Rua Tomas Da Fonseca TR a, Lisbon<br>Frequency of Attack: 4</div>`)[0];
+                popup_7e70619d1ee6df9a7e40b266c5e447f7.setContent(html_01dbc7a18e4323d6db1268bbd6eb8492);
+            
+        
+
+        marker_5566edae3ac44f68889d8acd718d6da6.bindPopup(popup_7e70619d1ee6df9a7e40b266c5e447f7)
+        ;
+
+        
+    
+    
+            var marker_e73d2f311586958b375a8c73065c8500 = L.marker(
+                [38.7602, -9.15911],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_2b0da027390dde4cae646bcb8d05c376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e73d2f311586958b375a8c73065c8500.setIcon(icon_2b0da027390dde4cae646bcb8d05c376);
+        
+    
+        var popup_1f5fac9f6c54b4adcd49948ba66a9efc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d383a4931612d2d933b96ce87463c2b = $(`<div id="html_4d383a4931612d2d933b96ce87463c2b" style="width: 100.0%; height: 100.0%;">Address: Estrada De Telheiras, Lisbon<br>Frequency of Attack: 3</div>`)[0];
+                popup_1f5fac9f6c54b4adcd49948ba66a9efc.setContent(html_4d383a4931612d2d933b96ce87463c2b);
+            
+        
+
+        marker_e73d2f311586958b375a8c73065c8500.bindPopup(popup_1f5fac9f6c54b4adcd49948ba66a9efc)
+        ;
+
+        
+    
+    
+            var marker_526057cbfc93dab9b1dc43267cc56715 = L.marker(
+                [38.75064, -9.17203],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_85198cbb9f680a952b794d19214b6ca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_526057cbfc93dab9b1dc43267cc56715.setIcon(icon_85198cbb9f680a952b794d19214b6ca2);
+        
+    
+        var popup_1d7e5d74927f0fb84872a0fe60e7c9d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66b0ddac6687d193a02d7fcba727233a = $(`<div id="html_66b0ddac6687d193a02d7fcba727233a" style="width: 100.0%; height: 100.0%;">Address: Rua Abranches Ferrao 8C, Lisbon<br>Frequency of Attack: 3</div>`)[0];
+                popup_1d7e5d74927f0fb84872a0fe60e7c9d3.setContent(html_66b0ddac6687d193a02d7fcba727233a);
+            
+        
+
+        marker_526057cbfc93dab9b1dc43267cc56715.bindPopup(popup_1d7e5d74927f0fb84872a0fe60e7c9d3)
+        ;
+
+        
+    
+    
+            var marker_0a167d42c5612d12babf6c3f168932fe = L.marker(
+                [38.69942, -9.22544],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_9a9b674e26a5ebe29ada50c53893bd7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0a167d42c5612d12babf6c3f168932fe.setIcon(icon_9a9b674e26a5ebe29ada50c53893bd7a);
+        
+    
+        var popup_3bf3d83007bc7a69bced576a353e51f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1f4b57ac1a7ab23a4d001ed37424b89 = $(`<div id="html_e1f4b57ac1a7ab23a4d001ed37424b89" style="width: 100.0%; height: 100.0%;">Address: Avenida Dom Vasco Da Gama 50 a, Lisbon<br>Frequency of Attack: 3</div>`)[0];
+                popup_3bf3d83007bc7a69bced576a353e51f5.setContent(html_e1f4b57ac1a7ab23a4d001ed37424b89);
+            
+        
+
+        marker_0a167d42c5612d12babf6c3f168932fe.bindPopup(popup_3bf3d83007bc7a69bced576a353e51f5)
+        ;
+
+        
+    
+    
+            var marker_f8e592d88c1d468733afd660fd8c514b = L.marker(
+                [38.75117, -9.1707],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_c52f1b8e109f14f1f42e62bed03f9c70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f8e592d88c1d468733afd660fd8c514b.setIcon(icon_c52f1b8e109f14f1f42e62bed03f9c70);
+        
+    
+        var popup_5b1ebcc38a035e759719d752b84b5a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f984cd519802307a98a319cdd65888 = $(`<div id="html_30f984cd519802307a98a319cdd65888" style="width: 100.0%; height: 100.0%;">Address: Rua Abranches Ferrao 17-B, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_5b1ebcc38a035e759719d752b84b5a00.setContent(html_30f984cd519802307a98a319cdd65888);
+            
+        
+
+        marker_f8e592d88c1d468733afd660fd8c514b.bindPopup(popup_5b1ebcc38a035e759719d752b84b5a00)
+        ;
+
+        
+    
+    
+            var marker_e31677b5861fa520270916761a2cefa7 = L.marker(
+                [38.75224, -9.17363],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_ce804f79d67cb7a7bba251dd92b811ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e31677b5861fa520270916761a2cefa7.setIcon(icon_ce804f79d67cb7a7bba251dd92b811ee);
+        
+    
+        var popup_e64f3301f5f153df6cc434008ff42067 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33a9a260eb6942558cbe0199d11b0597 = $(`<div id="html_33a9a260eb6942558cbe0199d11b0597" style="width: 100.0%; height: 100.0%;">Address: Estrada Da Luz 106 D, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_e64f3301f5f153df6cc434008ff42067.setContent(html_33a9a260eb6942558cbe0199d11b0597);
+            
+        
+
+        marker_e31677b5861fa520270916761a2cefa7.bindPopup(popup_e64f3301f5f153df6cc434008ff42067)
+        ;
+
+        
+    
+    
+            var marker_a209810a43c4b27a20d36fedb2093c66 = L.marker(
+                [38.75579, -9.16948],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_b94cf9f7c458f1a2101c5ae10f014503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a209810a43c4b27a20d36fedb2093c66.setIcon(icon_b94cf9f7c458f1a2101c5ae10f014503);
+        
+    
+        var popup_55fe64613e4d66f7520802f29d8c7a88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d93e080a9b09c0e26a2fba1f595092b5 = $(`<div id="html_d93e080a9b09c0e26a2fba1f595092b5" style="width: 100.0%; height: 100.0%;">Address: Rua Tomas Da Fonseca TR G, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_55fe64613e4d66f7520802f29d8c7a88.setContent(html_d93e080a9b09c0e26a2fba1f595092b5);
+            
+        
+
+        marker_a209810a43c4b27a20d36fedb2093c66.bindPopup(popup_55fe64613e4d66f7520802f29d8c7a88)
+        ;
+
+        
+    
+    
+            var marker_6b91fbd0d9231aa551ecedb906887ccd = L.marker(
+                [38.75606, -9.17039],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_1cfbe114e8cd0b9b4c019dfbba25188c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6b91fbd0d9231aa551ecedb906887ccd.setIcon(icon_1cfbe114e8cd0b9b4c019dfbba25188c);
+        
+    
+        var popup_95352a227879cfb600e441f50de39c18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_534995f719d97acedbad1df4b359985d = $(`<div id="html_534995f719d97acedbad1df4b359985d" style="width: 100.0%; height: 100.0%;">Address: Rua Tomas Da Fonseca TR C, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_95352a227879cfb600e441f50de39c18.setContent(html_534995f719d97acedbad1df4b359985d);
+            
+        
+
+        marker_6b91fbd0d9231aa551ecedb906887ccd.bindPopup(popup_95352a227879cfb600e441f50de39c18)
+        ;
+
+        
+    
+    
+            var marker_3221097d148b3a49efcdbbeafd831502 = L.marker(
+                [38.75579, -9.176],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_697efd67d3fa032bdc6ecec9d0c29db3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3221097d148b3a49efcdbbeafd831502.setIcon(icon_697efd67d3fa032bdc6ecec9d0c29db3);
+        
+    
+        var popup_ea6b6a69a335f69cc276fc660af6afca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a72d9f36dcb3e4443274ddc79b252de = $(`<div id="html_8a72d9f36dcb3e4443274ddc79b252de" style="width: 100.0%; height: 100.0%;">Address: Rua Tomas Da Fonseca 4 D, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_ea6b6a69a335f69cc276fc660af6afca.setContent(html_8a72d9f36dcb3e4443274ddc79b252de);
+            
+        
+
+        marker_3221097d148b3a49efcdbbeafd831502.bindPopup(popup_ea6b6a69a335f69cc276fc660af6afca)
+        ;
+
+        
+    
+    
+            var marker_3043b03cde4aebba0ffecf26321b450b = L.marker(
+                [38.74623, -9.16982],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_e2db599f5e464a84734772a35e1a7e27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3043b03cde4aebba0ffecf26321b450b.setIcon(icon_e2db599f5e464a84734772a35e1a7e27);
+        
+    
+        var popup_ba9e80613dd867ce53c5fbe4fc87c801 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c525e94bc7544af3785842cb4aa6d160 = $(`<div id="html_c525e94bc7544af3785842cb4aa6d160" style="width: 100.0%; height: 100.0%;">Address: Estrada Laranjeiras 233, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_ba9e80613dd867ce53c5fbe4fc87c801.setContent(html_c525e94bc7544af3785842cb4aa6d160);
+            
+        
+
+        marker_3043b03cde4aebba0ffecf26321b450b.bindPopup(popup_ba9e80613dd867ce53c5fbe4fc87c801)
+        ;
+
+        
+    
+    
+            var marker_c1b7c44c46ba6955ccda0c2d47e76065 = L.marker(
+                [38.76099, -9.15724],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_1fec670cbd693b557043462aa5b2e494 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c1b7c44c46ba6955ccda0c2d47e76065.setIcon(icon_1fec670cbd693b557043462aa5b2e494);
+        
+    
+        var popup_d6d856b705befdaa91c1b128098dbae8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37fd22042c6732416ed1e191551be2ac = $(`<div id="html_37fd22042c6732416ed1e191551be2ac" style="width: 100.0%; height: 100.0%;">Address: Rua Cipriano Dourado, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_d6d856b705befdaa91c1b128098dbae8.setContent(html_37fd22042c6732416ed1e191551be2ac);
+            
+        
+
+        marker_c1b7c44c46ba6955ccda0c2d47e76065.bindPopup(popup_d6d856b705befdaa91c1b128098dbae8)
+        ;
+
+        
+    
+    
+            var marker_640867dd5d51de3577e7a26509d4f91c = L.marker(
+                [38.75619, -9.15641],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_c8d0919813ce51ef38ce5278f575424e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_640867dd5d51de3577e7a26509d4f91c.setIcon(icon_c8d0919813ce51ef38ce5278f575424e);
+        
+    
+        var popup_f79ae96135524e090a970da3adb0b841 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb864d773cbf77a3bd511e7b8b4ffb56 = $(`<div id="html_bb864d773cbf77a3bd511e7b8b4ffb56" style="width: 100.0%; height: 100.0%;">Address: Campo Grande 4 C, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_f79ae96135524e090a970da3adb0b841.setContent(html_bb864d773cbf77a3bd511e7b8b4ffb56);
+            
+        
+
+        marker_640867dd5d51de3577e7a26509d4f91c.bindPopup(popup_f79ae96135524e090a970da3adb0b841)
+        ;
+
+        
+    
+    
+            var marker_27d8bdbd6c3d5db5ec0f8a575a5ac269 = L.marker(
+                [38.74447, -9.16132],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_bb8c565f2f09a00a3b0bd94e31d1e95c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27d8bdbd6c3d5db5ec0f8a575a5ac269.setIcon(icon_bb8c565f2f09a00a3b0bd94e31d1e95c);
+        
+    
+        var popup_f3c996bf2b74ee8ca7efe3e44502336c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8571cb4af32ba13337e83ceff8f12cbc = $(`<div id="html_8571cb4af32ba13337e83ceff8f12cbc" style="width: 100.0%; height: 100.0%;">Address: Avenida Dos Combatentes, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_f3c996bf2b74ee8ca7efe3e44502336c.setContent(html_8571cb4af32ba13337e83ceff8f12cbc);
+            
+        
+
+        marker_27d8bdbd6c3d5db5ec0f8a575a5ac269.bindPopup(popup_f3c996bf2b74ee8ca7efe3e44502336c)
+        ;
+
+        
+    
+    
+            var marker_342e81b53871cf94c13f0562ec90bf89 = L.marker(
+                [38.747, -9.18781],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_79bc51a00fd7fdff4837b37f832b0d3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_342e81b53871cf94c13f0562ec90bf89.setIcon(icon_79bc51a00fd7fdff4837b37f832b0d3e);
+        
+    
+        var popup_a5f274951a34bc3c24436292e92b3828 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_890011ae21ed355806afbc72bf23b2ba = $(`<div id="html_890011ae21ed355806afbc72bf23b2ba" style="width: 100.0%; height: 100.0%;">Address: Estrada Benfica 158, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_a5f274951a34bc3c24436292e92b3828.setContent(html_890011ae21ed355806afbc72bf23b2ba);
+            
+        
+
+        marker_342e81b53871cf94c13f0562ec90bf89.bindPopup(popup_a5f274951a34bc3c24436292e92b3828)
+        ;
+
+        
+    
+    
+            var marker_f433021a1595871b27cfc5a7c54a3923 = L.marker(
+                [38.75009, -9.16161],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_0650515c3c8e673d8cfe53b31e4d200b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f433021a1595871b27cfc5a7c54a3923.setIcon(icon_0650515c3c8e673d8cfe53b31e4d200b);
+        
+    
+        var popup_73d68ce08e3976e1ddcd88030e6af0a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae6db87b303eb4726eb398843aa1d2b3 = $(`<div id="html_ae6db87b303eb4726eb398843aa1d2b3" style="width: 100.0%; height: 100.0%;">Address: Avenida Professor Egas Moniz, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_73d68ce08e3976e1ddcd88030e6af0a4.setContent(html_ae6db87b303eb4726eb398843aa1d2b3);
+            
+        
+
+        marker_f433021a1595871b27cfc5a7c54a3923.bindPopup(popup_73d68ce08e3976e1ddcd88030e6af0a4)
+        ;
+
+        
+    
+    
+            var marker_e4707ecd14514a0ef8ff14be2f69630b = L.marker(
+                [38.74478, -9.16035],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_d75a5f0ff52251a2cc1a0613fee964db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e4707ecd14514a0ef8ff14be2f69630b.setIcon(icon_d75a5f0ff52251a2cc1a0613fee964db);
+        
+    
+        var popup_005e5e2180cb7efa7cc046f375e90f76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16b776892a5fb76da7640d7008db0019 = $(`<div id="html_16b776892a5fb76da7640d7008db0019" style="width: 100.0%; height: 100.0%;">Address: Rua Soeiro Pereira Gomes LT 1, Lisbon<br>Frequency of Attack: 2</div>`)[0];
+                popup_005e5e2180cb7efa7cc046f375e90f76.setContent(html_16b776892a5fb76da7640d7008db0019);
+            
+        
+
+        marker_e4707ecd14514a0ef8ff14be2f69630b.bindPopup(popup_005e5e2180cb7efa7cc046f375e90f76)
+        ;
+
+        
+    
+    
+            var marker_d205af220e1095a044a3450383f27326 = L.marker(
+                [38.74664, -9.18455],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_a1c3f9deeab9578fd77b8196083adc28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_d205af220e1095a044a3450383f27326.setIcon(icon_a1c3f9deeab9578fd77b8196083adc28);
+        
+    
+        var popup_fbe2fa9be274453777cb846bb6697eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d37e1ed8f1017dc947626cadd6a878f = $(`<div id="html_7d37e1ed8f1017dc947626cadd6a878f" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 424, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_fbe2fa9be274453777cb846bb6697eb3.setContent(html_7d37e1ed8f1017dc947626cadd6a878f);
+            
+        
+
+        marker_d205af220e1095a044a3450383f27326.bindPopup(popup_fbe2fa9be274453777cb846bb6697eb3)
+        ;
+
+        
+    
+    
+            var marker_01e6f9f1aee01b5316254bb93f7b5a76 = L.marker(
+                [38.76013, -9.17572],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_faa11f0d4e6db2aeffe060217e20ed54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_01e6f9f1aee01b5316254bb93f7b5a76.setIcon(icon_faa11f0d4e6db2aeffe060217e20ed54);
+        
+    
+        var popup_afc1cd856b202ce2fd2545774fd1a010 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04f69fd238fc27cc7b1d2e20b7cc7152 = $(`<div id="html_04f69fd238fc27cc7b1d2e20b7cc7152" style="width: 100.0%; height: 100.0%;">Address: Rua Fernando Namora 24, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_afc1cd856b202ce2fd2545774fd1a010.setContent(html_04f69fd238fc27cc7b1d2e20b7cc7152);
+            
+        
+
+        marker_01e6f9f1aee01b5316254bb93f7b5a76.bindPopup(popup_afc1cd856b202ce2fd2545774fd1a010)
+        ;
+
+        
+    
+    
+            var marker_8e6e65cef74b8428994e68eebac929d2 = L.marker(
+                [38.75579, -9.16948],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_2c8dd292ae6bb5045f264a30c36c39ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_8e6e65cef74b8428994e68eebac929d2.setIcon(icon_2c8dd292ae6bb5045f264a30c36c39ed);
+        
+    
+        var popup_5437fd9ecb76610ec43fe4657501c913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd48d3fb368541ef0931a590ab4ae53 = $(`<div id="html_0fd48d3fb368541ef0931a590ab4ae53" style="width: 100.0%; height: 100.0%;">Address: Rua Tomas Da Fonseca, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_5437fd9ecb76610ec43fe4657501c913.setContent(html_0fd48d3fb368541ef0931a590ab4ae53);
+            
+        
+
+        marker_8e6e65cef74b8428994e68eebac929d2.bindPopup(popup_5437fd9ecb76610ec43fe4657501c913)
+        ;
+
+        
+    
+    
+            var marker_5abba840a939e51f06ab30d968ad2ca5 = L.marker(
+                [38.74672, -9.17],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_5aa6503cf523fbc69bcb80c55bb89536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5abba840a939e51f06ab30d968ad2ca5.setIcon(icon_5aa6503cf523fbc69bcb80c55bb89536);
+        
+    
+        var popup_589f1f75cf53f7519cef0e49f8a5028e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2ae514ceb58e80e89ec024ddf0d9d5f = $(`<div id="html_f2ae514ceb58e80e89ec024ddf0d9d5f" style="width: 100.0%; height: 100.0%;">Address: Estrada Da Luz LT 6, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_589f1f75cf53f7519cef0e49f8a5028e.setContent(html_f2ae514ceb58e80e89ec024ddf0d9d5f);
+            
+        
+
+        marker_5abba840a939e51f06ab30d968ad2ca5.bindPopup(popup_589f1f75cf53f7519cef0e49f8a5028e)
+        ;
+
+        
+    
+    
+            var marker_96c45bcd44ee9dcaa124d615d13ac512 = L.marker(
+                [38.76319, -9.14026],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_561d6799f9cc791961634c2da71adb74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_96c45bcd44ee9dcaa124d615d13ac512.setIcon(icon_561d6799f9cc791961634c2da71adb74);
+        
+    
+        var popup_62b2be0bf57b49c74747e168fbb81f46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1510f345084a169718ad01d2c28fd43 = $(`<div id="html_a1510f345084a169718ad01d2c28fd43" style="width: 100.0%; height: 100.0%;">Address: Avenida Marechal Craveiro Lopes, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_62b2be0bf57b49c74747e168fbb81f46.setContent(html_a1510f345084a169718ad01d2c28fd43);
+            
+        
+
+        marker_96c45bcd44ee9dcaa124d615d13ac512.bindPopup(popup_62b2be0bf57b49c74747e168fbb81f46)
+        ;
+
+        
+    
+    
+            var marker_299e455dbe2d17e83cf55d90d2f154c1 = L.marker(
+                [38.74672, -9.17],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_149f1d12750fe6cf7e218b9993b7a9b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_299e455dbe2d17e83cf55d90d2f154c1.setIcon(icon_149f1d12750fe6cf7e218b9993b7a9b8);
+        
+    
+        var popup_d6be5afdcb0a02ac0ae90808cc9cdef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81c04ab36a42fc2b005f45f67243e87d = $(`<div id="html_81c04ab36a42fc2b005f45f67243e87d" style="width: 100.0%; height: 100.0%;">Address: Estrada Da Luz LT 6, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_d6be5afdcb0a02ac0ae90808cc9cdef1.setContent(html_81c04ab36a42fc2b005f45f67243e87d);
+            
+        
+
+        marker_299e455dbe2d17e83cf55d90d2f154c1.bindPopup(popup_d6be5afdcb0a02ac0ae90808cc9cdef1)
+        ;
+
+        
+    
+    
+            var marker_f50ee93f8b24d64f6a17147c45ebdea3 = L.marker(
+                [38.76347, -9.15716],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_13667683af707197d33c859775affe66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f50ee93f8b24d64f6a17147c45ebdea3.setIcon(icon_13667683af707197d33c859775affe66);
+        
+    
+        var popup_667453fd9287a507021a13365d146944 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_959bd8f458a68010c1b13dc085992860 = $(`<div id="html_959bd8f458a68010c1b13dc085992860" style="width: 100.0%; height: 100.0%;">Address: Rua Francisco Stromp Lote 1, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_667453fd9287a507021a13365d146944.setContent(html_959bd8f458a68010c1b13dc085992860);
+            
+        
+
+        marker_f50ee93f8b24d64f6a17147c45ebdea3.bindPopup(popup_667453fd9287a507021a13365d146944)
+        ;
+
+        
+    
+    
+            var marker_654ffc1bb8d7c71525d8ed6e62f42d91 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_29c9fba8d4a6ea2728df7aae57196355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_654ffc1bb8d7c71525d8ed6e62f42d91.setIcon(icon_29c9fba8d4a6ea2728df7aae57196355);
+        
+    
+        var popup_d00413a0cf68a1a5b0fb8b1035a3c6cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a7040bb7fdcbdf491c599bbf9a83f3b = $(`<div id="html_9a7040bb7fdcbdf491c599bbf9a83f3b" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_d00413a0cf68a1a5b0fb8b1035a3c6cb.setContent(html_9a7040bb7fdcbdf491c599bbf9a83f3b);
+            
+        
+
+        marker_654ffc1bb8d7c71525d8ed6e62f42d91.bindPopup(popup_d00413a0cf68a1a5b0fb8b1035a3c6cb)
+        ;
+
+        
+    
+    
+            var marker_e4ac4186718bba76a0a63f32b4130c7b = L.marker(
+                [38.7494, -9.19278],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_313c7f4bbb517fb5421974f651304bd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_e4ac4186718bba76a0a63f32b4130c7b.setIcon(icon_313c7f4bbb517fb5421974f651304bd9);
+        
+    
+        var popup_0758ad9fe4b4a93572cac8cb6d01efd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69f06c09619f07c4540131b858731bb0 = $(`<div id="html_69f06c09619f07c4540131b858731bb0" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 519, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_0758ad9fe4b4a93572cac8cb6d01efd9.setContent(html_69f06c09619f07c4540131b858731bb0);
+            
+        
+
+        marker_e4ac4186718bba76a0a63f32b4130c7b.bindPopup(popup_0758ad9fe4b4a93572cac8cb6d01efd9)
+        ;
+
+        
+    
+    
+            var marker_021f630c0a44345a2d44decc3d7ce910 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_fe98e0ca469d0c62cbec207924a7a2f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_021f630c0a44345a2d44decc3d7ce910.setIcon(icon_fe98e0ca469d0c62cbec207924a7a2f8);
+        
+    
+        var popup_507cbf8f90ec8d90712155db3c88985d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee0731edccb85246310cf50b3283c338 = $(`<div id="html_ee0731edccb85246310cf50b3283c338" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada Loja 705, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_507cbf8f90ec8d90712155db3c88985d.setContent(html_ee0731edccb85246310cf50b3283c338);
+            
+        
+
+        marker_021f630c0a44345a2d44decc3d7ce910.bindPopup(popup_507cbf8f90ec8d90712155db3c88985d)
+        ;
+
+        
+    
+    
+            var marker_18e7d7538415500c7b6cc307ba2ff435 = L.marker(
+                [38.75208, -9.20605],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_836b53e9e833453f35f387dd27f384c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_18e7d7538415500c7b6cc307ba2ff435.setIcon(icon_836b53e9e833453f35f387dd27f384c3);
+        
+    
+        var popup_2def984a51c2b283238d6f23f1b50a05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cc6a1dfe4ff18807188b6f53dc01180 = $(`<div id="html_7cc6a1dfe4ff18807188b6f53dc01180" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 765 a, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_2def984a51c2b283238d6f23f1b50a05.setContent(html_7cc6a1dfe4ff18807188b6f53dc01180);
+            
+        
+
+        marker_18e7d7538415500c7b6cc307ba2ff435.bindPopup(popup_2def984a51c2b283238d6f23f1b50a05)
+        ;
+
+        
+    
+    
+            var marker_f34f7bc88e5b057f3844c7871459f336 = L.marker(
+                [38.76316, -9.15289],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_6e30633f398d332df6edd086ecbb60db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f34f7bc88e5b057f3844c7871459f336.setIcon(icon_6e30633f398d332df6edd086ecbb60db);
+        
+    
+        var popup_6641902eb92df70db5de44e2fc04599f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2316db93dcb9ebf041fb44f8e25c2aed = $(`<div id="html_2316db93dcb9ebf041fb44f8e25c2aed" style="width: 100.0%; height: 100.0%;">Address: Rua Agostinho Neto Lote 6/7, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_6641902eb92df70db5de44e2fc04599f.setContent(html_2316db93dcb9ebf041fb44f8e25c2aed);
+            
+        
+
+        marker_f34f7bc88e5b057f3844c7871459f336.bindPopup(popup_6641902eb92df70db5de44e2fc04599f)
+        ;
+
+        
+    
+    
+            var marker_41566d3e3312a2d70885534c6429b103 = L.marker(
+                [38.76316, -9.15289],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_70a948f55362e7d6ceb994e63a438154 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_41566d3e3312a2d70885534c6429b103.setIcon(icon_70a948f55362e7d6ceb994e63a438154);
+        
+    
+        var popup_510d1c1e86c1d3da3359cac17f657e08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ab9aba56a60560b8c48a636ef81dba6 = $(`<div id="html_3ab9aba56a60560b8c48a636ef81dba6" style="width: 100.0%; height: 100.0%;">Address: Rua Agostinho Neto Lote 6/7, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_510d1c1e86c1d3da3359cac17f657e08.setContent(html_3ab9aba56a60560b8c48a636ef81dba6);
+            
+        
+
+        marker_41566d3e3312a2d70885534c6429b103.bindPopup(popup_510d1c1e86c1d3da3359cac17f657e08)
+        ;
+
+        
+    
+    
+            var marker_5153cee73d465e1c748ce8c615dc1a59 = L.marker(
+                [38.7494, -9.19278],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_49c4680b020a6431e39bdd3bc3afa1f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5153cee73d465e1c748ce8c615dc1a59.setIcon(icon_49c4680b020a6431e39bdd3bc3afa1f4);
+        
+    
+        var popup_9b45df00b9cd9cb0ffdfe94b7396db00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4f2c76745e8d9d5504c20ddb18e420e = $(`<div id="html_a4f2c76745e8d9d5504c20ddb18e420e" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 519, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_9b45df00b9cd9cb0ffdfe94b7396db00.setContent(html_a4f2c76745e8d9d5504c20ddb18e420e);
+            
+        
+
+        marker_5153cee73d465e1c748ce8c615dc1a59.bindPopup(popup_9b45df00b9cd9cb0ffdfe94b7396db00)
+        ;
+
+        
+    
+    
+            var marker_e1b9ed4f2991ca46c3877dfcf9bc1589 = L.marker(
+                [38.74672, -9.17],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_776578d2eececbc7768842ca1faa3a27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_e1b9ed4f2991ca46c3877dfcf9bc1589.setIcon(icon_776578d2eececbc7768842ca1faa3a27);
+        
+    
+        var popup_e4a68e389771d779b50caf1bcb30e982 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6fee6c55d71f230f2939a64bce99207 = $(`<div id="html_a6fee6c55d71f230f2939a64bce99207" style="width: 100.0%; height: 100.0%;">Address: Estrada Da Luz LT 6, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_e4a68e389771d779b50caf1bcb30e982.setContent(html_a6fee6c55d71f230f2939a64bce99207);
+            
+        
+
+        marker_e1b9ed4f2991ca46c3877dfcf9bc1589.bindPopup(popup_e4a68e389771d779b50caf1bcb30e982)
+        ;
+
+        
+    
+    
+            var marker_27930b0ab95fa486252038ba4496dcc9 = L.marker(
+                [38.74901, -9.19071],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_0493a05bae95e5351d6d23e47e68f689 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_27930b0ab95fa486252038ba4496dcc9.setIcon(icon_0493a05bae95e5351d6d23e47e68f689);
+        
+    
+        var popup_c1890b86360f764e351d53f088e37739 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ba653c7dd589d4c4c6778b86c610b58 = $(`<div id="html_0ba653c7dd589d4c4c6778b86c610b58" style="width: 100.0%; height: 100.0%;">Address: Estrada Benfica 503 - 2, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_c1890b86360f764e351d53f088e37739.setContent(html_0ba653c7dd589d4c4c6778b86c610b58);
+            
+        
+
+        marker_27930b0ab95fa486252038ba4496dcc9.bindPopup(popup_c1890b86360f764e351d53f088e37739)
+        ;
+
+        
+    
+    
+            var marker_ebeeb4aaa2722c36acc1ea93982f3d27 = L.marker(
+                [38.75268, -9.20649],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_fdef7ed7803cdd8f271fd72756de3513 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ebeeb4aaa2722c36acc1ea93982f3d27.setIcon(icon_fdef7ed7803cdd8f271fd72756de3513);
+        
+    
+        var popup_7ac2da7bb5f2cac76ddeedf648d7c3bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4eadebf5ad01655cdaf8767c9aaf3b9 = $(`<div id="html_f4eadebf5ad01655cdaf8767c9aaf3b9" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_7ac2da7bb5f2cac76ddeedf648d7c3bb.setContent(html_f4eadebf5ad01655cdaf8767c9aaf3b9);
+            
+        
+
+        marker_ebeeb4aaa2722c36acc1ea93982f3d27.bindPopup(popup_7ac2da7bb5f2cac76ddeedf648d7c3bb)
+        ;
+
+        
+    
+    
+            var marker_b442bdda8acea8e6bd06cc308b6c2588 = L.marker(
+                [38.7459, -9.15995],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_70f3d7f14fe263e2e2f65f42822023b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_b442bdda8acea8e6bd06cc308b6c2588.setIcon(icon_70f3d7f14fe263e2e2f65f42822023b7);
+        
+    
+        var popup_e254e6e4982354b2e4e8865a0cd6d007 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8126c0e624ac73881af9b6b97d20c39f = $(`<div id="html_8126c0e624ac73881af9b6b97d20c39f" style="width: 100.0%; height: 100.0%;">Address: Avenida Das Forcas Armadas, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_e254e6e4982354b2e4e8865a0cd6d007.setContent(html_8126c0e624ac73881af9b6b97d20c39f);
+            
+        
+
+        marker_b442bdda8acea8e6bd06cc308b6c2588.bindPopup(popup_e254e6e4982354b2e4e8865a0cd6d007)
+        ;
+
+        
+    
+    
+            var marker_43e18bebbcd5c6ccd8518ff923bb6fa0 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_828bcacc582585243b98f7a828dd62cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_43e18bebbcd5c6ccd8518ff923bb6fa0.setIcon(icon_828bcacc582585243b98f7a828dd62cd);
+        
+    
+        var popup_5a304c242dc9fa3615172816c2a4be73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6066a1c4e7e013d14077d87be24603b = $(`<div id="html_e6066a1c4e7e013d14077d87be24603b" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_5a304c242dc9fa3615172816c2a4be73.setContent(html_e6066a1c4e7e013d14077d87be24603b);
+            
+        
+
+        marker_43e18bebbcd5c6ccd8518ff923bb6fa0.bindPopup(popup_5a304c242dc9fa3615172816c2a4be73)
+        ;
+
+        
+    
+    
+            var marker_f17bb4dda641fe51375c005b9b2e655f = L.marker(
+                [38.75854, -9.15345],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_1a94b9de338054947c7b104119e5a9ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f17bb4dda641fe51375c005b9b2e655f.setIcon(icon_1a94b9de338054947c7b104119e5a9ea);
+        
+    
+        var popup_46689bc3f709cf6297ddab3a58a492f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_406780ce43e413559b5cd47ab3486085 = $(`<div id="html_406780ce43e413559b5cd47ab3486085" style="width: 100.0%; height: 100.0%;">Address: Campo Grande 380-B, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_46689bc3f709cf6297ddab3a58a492f2.setContent(html_406780ce43e413559b5cd47ab3486085);
+            
+        
+
+        marker_f17bb4dda641fe51375c005b9b2e655f.bindPopup(popup_46689bc3f709cf6297ddab3a58a492f2)
+        ;
+
+        
+    
+    
+            var marker_c6a2114ade022cbbe41017039fdfe906 = L.marker(
+                [38.76306, -9.1296],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_274be6caed7504a7fb165cf2ebb5b23e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c6a2114ade022cbbe41017039fdfe906.setIcon(icon_274be6caed7504a7fb165cf2ebb5b23e);
+        
+    
+        var popup_880bb9034f5d1df0073e9f9e715aedc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c87e5899ddd92ed5f56f0d75db38a2c3 = $(`<div id="html_c87e5899ddd92ed5f56f0d75db38a2c3" style="width: 100.0%; height: 100.0%;">Address: Rua D Aeroporto Lisboa, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_880bb9034f5d1df0073e9f9e715aedc6.setContent(html_c87e5899ddd92ed5f56f0d75db38a2c3);
+            
+        
+
+        marker_c6a2114ade022cbbe41017039fdfe906.bindPopup(popup_880bb9034f5d1df0073e9f9e715aedc6)
+        ;
+
+        
+    
+    
+            var marker_c816059b117cf0485e688bf2f792a9a5 = L.marker(
+                [38.7459, -9.15995],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_0416ad2dd86d2f853954decf676ec225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c816059b117cf0485e688bf2f792a9a5.setIcon(icon_0416ad2dd86d2f853954decf676ec225);
+        
+    
+        var popup_8a14dceb405d8bfc6349dabe622c88a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_861d90a37468028d50849452d5b34e9e = $(`<div id="html_861d90a37468028d50849452d5b34e9e" style="width: 100.0%; height: 100.0%;">Address: Avenida Das Forcas Armadas, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_8a14dceb405d8bfc6349dabe622c88a3.setContent(html_861d90a37468028d50849452d5b34e9e);
+            
+        
+
+        marker_c816059b117cf0485e688bf2f792a9a5.bindPopup(popup_8a14dceb405d8bfc6349dabe622c88a3)
+        ;
+
+        
+    
+    
+            var marker_87897c54eb181efebbf65b288b136f0e = L.marker(
+                [38.74716, -9.18009],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_06ecd6e88a86be95e2e9b74745a91d7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_87897c54eb181efebbf65b288b136f0e.setIcon(icon_06ecd6e88a86be95e2e9b74745a91d7e);
+        
+    
+        var popup_797934ca2e71ed30807ea7366866cbda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82d041ca98811b216087ed4d66495a3c = $(`<div id="html_82d041ca98811b216087ed4d66495a3c" style="width: 100.0%; height: 100.0%;">Address: Rua a Do Loteamento Alto Dos Moinhos Lote 4, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_797934ca2e71ed30807ea7366866cbda.setContent(html_82d041ca98811b216087ed4d66495a3c);
+            
+        
+
+        marker_87897c54eb181efebbf65b288b136f0e.bindPopup(popup_797934ca2e71ed30807ea7366866cbda)
+        ;
+
+        
+    
+    
+            var marker_5d09bf64f7df5363da39bb0fce45bd38 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_303aeab3be01a3e37c0b7b53470db221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5d09bf64f7df5363da39bb0fce45bd38.setIcon(icon_303aeab3be01a3e37c0b7b53470db221);
+        
+    
+        var popup_0e2875b5317998eb998010b456396e0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9586d771a8c43b183be123b0bdd758c4 = $(`<div id="html_9586d771a8c43b183be123b0bdd758c4" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_0e2875b5317998eb998010b456396e0a.setContent(html_9586d771a8c43b183be123b0bdd758c4);
+            
+        
+
+        marker_5d09bf64f7df5363da39bb0fce45bd38.bindPopup(popup_0e2875b5317998eb998010b456396e0a)
+        ;
+
+        
+    
+    
+            var marker_c3f952ff631ad0b98504e1745b28c139 = L.marker(
+                [38.75116, -9.17245],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_7e92f0b32d92e90584779844b826b16a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c3f952ff631ad0b98504e1745b28c139.setIcon(icon_7e92f0b32d92e90584779844b826b16a);
+        
+    
+        var popup_9cf27c6244450579cd47dfe3d388e5ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da737d265f77fb5b624bdaeabcba5be1 = $(`<div id="html_da737d265f77fb5b624bdaeabcba5be1" style="width: 100.0%; height: 100.0%;">Address: Rua Virgilio Correia 3 A-C, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_9cf27c6244450579cd47dfe3d388e5ee.setContent(html_da737d265f77fb5b624bdaeabcba5be1);
+            
+        
+
+        marker_c3f952ff631ad0b98504e1745b28c139.bindPopup(popup_9cf27c6244450579cd47dfe3d388e5ee)
+        ;
+
+        
+    
+    
+            var marker_ac7e8457c621f6342f29d8372da60dbd = L.marker(
+                [38.69839, -9.2182],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_032da71e09626faad328f6e220842672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ac7e8457c621f6342f29d8372da60dbd.setIcon(icon_032da71e09626faad328f6e220842672);
+        
+    
+        var popup_bdd920208dde75cc614fcc7ea936dbcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14d2d279919304d3f7ede5a39708ec52 = $(`<div id="html_14d2d279919304d3f7ede5a39708ec52" style="width: 100.0%; height: 100.0%;">Address: R. Duarte Pacheco Pereira 30D, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_bdd920208dde75cc614fcc7ea936dbcb.setContent(html_14d2d279919304d3f7ede5a39708ec52);
+            
+        
+
+        marker_ac7e8457c621f6342f29d8372da60dbd.bindPopup(popup_bdd920208dde75cc614fcc7ea936dbcb)
+        ;
+
+        
+    
+    
+            var marker_1a8f5f0a057b9fafc6ee390aeece2b04 = L.marker(
+                [38.74335, -9.17461],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_da31f02a356761aa15b6e0789f4875ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_1a8f5f0a057b9fafc6ee390aeece2b04.setIcon(icon_da31f02a356761aa15b6e0789f4875ed);
+        
+    
+        var popup_ba8324c1575bc3044b6725af118743e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b076361f540405e733d0d5dbfd52a01d = $(`<div id="html_b076361f540405e733d0d5dbfd52a01d" style="width: 100.0%; height: 100.0%;">Address: Rua Padre Francisco Alvares 1a, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_ba8324c1575bc3044b6725af118743e2.setContent(html_b076361f540405e733d0d5dbfd52a01d);
+            
+        
+
+        marker_1a8f5f0a057b9fafc6ee390aeece2b04.bindPopup(popup_ba8324c1575bc3044b6725af118743e2)
+        ;
+
+        
+    
+    
+            var marker_7f8b5cee44584abd6931f17a9c6ed6a0 = L.marker(
+                [38.74335, -9.17461],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_817a7e785b451a0c694c1d102d42c0a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7f8b5cee44584abd6931f17a9c6ed6a0.setIcon(icon_817a7e785b451a0c694c1d102d42c0a9);
+        
+    
+        var popup_2d111c7db18c88df56ed77979c1de837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83d43c9377a9b7a038474a0c45aecd2e = $(`<div id="html_83d43c9377a9b7a038474a0c45aecd2e" style="width: 100.0%; height: 100.0%;">Address: Rua Padre Francisco Alvares 1a, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_2d111c7db18c88df56ed77979c1de837.setContent(html_83d43c9377a9b7a038474a0c45aecd2e);
+            
+        
+
+        marker_7f8b5cee44584abd6931f17a9c6ed6a0.bindPopup(popup_2d111c7db18c88df56ed77979c1de837)
+        ;
+
+        
+    
+    
+            var marker_78e2b53cce164a067ab642ae2614a1c9 = L.marker(
+                [38.69839, -9.2182],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_2953c196a45441857d6a7397d84567ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_78e2b53cce164a067ab642ae2614a1c9.setIcon(icon_2953c196a45441857d6a7397d84567ce);
+        
+    
+        var popup_4858d41e9d7cf446e584a0280328aae3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbe23e864aa1abc75d3fb905a2378ade = $(`<div id="html_dbe23e864aa1abc75d3fb905a2378ade" style="width: 100.0%; height: 100.0%;">Address: R. Duarte Pacheco Pereira 30D, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_4858d41e9d7cf446e584a0280328aae3.setContent(html_dbe23e864aa1abc75d3fb905a2378ade);
+            
+        
+
+        marker_78e2b53cce164a067ab642ae2614a1c9.bindPopup(popup_4858d41e9d7cf446e584a0280328aae3)
+        ;
+
+        
+    
+    
+            var marker_0524ccdeaec86e3054db01e54888b810 = L.marker(
+                [38.74655, -9.18415],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_ab17f62358517332a5af9e6842bd7c1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_0524ccdeaec86e3054db01e54888b810.setIcon(icon_ab17f62358517332a5af9e6842bd7c1b);
+        
+    
+        var popup_4109fc8208e5375eab44f1ed6822c2dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7655a41a6952ad79d6f62ede78daa337 = $(`<div id="html_7655a41a6952ad79d6f62ede78daa337" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 420, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_4109fc8208e5375eab44f1ed6822c2dc.setContent(html_7655a41a6952ad79d6f62ede78daa337);
+            
+        
+
+        marker_0524ccdeaec86e3054db01e54888b810.bindPopup(popup_4109fc8208e5375eab44f1ed6822c2dc)
+        ;
+
+        
+    
+    
+            var marker_3494700c5023d493480cf450d4891640 = L.marker(
+                [38.74414, -9.15928],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_c07d9af6d3f3b43d1433f83376eb26ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_3494700c5023d493480cf450d4891640.setIcon(icon_c07d9af6d3f3b43d1433f83376eb26ac);
+        
+    
+        var popup_5adc9a10d584a58fcc90751446e276ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53b7c09f838c91261bc820348ca1d5a7 = $(`<div id="html_53b7c09f838c91261bc820348ca1d5a7" style="width: 100.0%; height: 100.0%;">Address: Rua Soeiro Pereira Gomes Lote 2, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_5adc9a10d584a58fcc90751446e276ac.setContent(html_53b7c09f838c91261bc820348ca1d5a7);
+            
+        
+
+        marker_3494700c5023d493480cf450d4891640.bindPopup(popup_5adc9a10d584a58fcc90751446e276ac)
+        ;
+
+        
+    
+    
+            var marker_26235117df0e006858a74a96379e23f2 = L.marker(
+                [38.73728, -9.16402],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_37084420394931a991c67ec3d16534ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_26235117df0e006858a74a96379e23f2.setIcon(icon_37084420394931a991c67ec3d16534ec);
+        
+    
+        var popup_8c3a0c01d28aa6eaab2f11b708cbdda7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52b0859770a62adf9e9707f8c66fddb5 = $(`<div id="html_52b0859770a62adf9e9707f8c66fddb5" style="width: 100.0%; height: 100.0%;">Address: Avenida Jose Malhoa Lote 1792, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_8c3a0c01d28aa6eaab2f11b708cbdda7.setContent(html_52b0859770a62adf9e9707f8c66fddb5);
+            
+        
+
+        marker_26235117df0e006858a74a96379e23f2.bindPopup(popup_8c3a0c01d28aa6eaab2f11b708cbdda7)
+        ;
+
+        
+    
+    
+            var marker_fc8fce473423d7dbb4536e7a51fb7d97 = L.marker(
+                [38.747, -9.18781],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_5089d0adfe58bcd3a8e4773f56468d8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_fc8fce473423d7dbb4536e7a51fb7d97.setIcon(icon_5089d0adfe58bcd3a8e4773f56468d8a);
+        
+    
+        var popup_1dbb68c2c458e767c2edd12e763922d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5addbe651c2929b7ce0efe600bf3f836 = $(`<div id="html_5addbe651c2929b7ce0efe600bf3f836" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 165-A, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_1dbb68c2c458e767c2edd12e763922d7.setContent(html_5addbe651c2929b7ce0efe600bf3f836);
+            
+        
+
+        marker_fc8fce473423d7dbb4536e7a51fb7d97.bindPopup(popup_1dbb68c2c458e767c2edd12e763922d7)
+        ;
+
+        
+    
+    
+            var marker_187a74eadf2f6157d551bf099fc6d6a5 = L.marker(
+                [38.747, -9.18781],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_8b31c052603023a190316eaeb302f85f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_187a74eadf2f6157d551bf099fc6d6a5.setIcon(icon_8b31c052603023a190316eaeb302f85f);
+        
+    
+        var popup_56d3198dae674fe2f57c79554e026e6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c3adf6bb6006ccf308d53e3bd44ecc2 = $(`<div id="html_2c3adf6bb6006ccf308d53e3bd44ecc2" style="width: 100.0%; height: 100.0%;">Address: Estrada Benfica 158, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_56d3198dae674fe2f57c79554e026e6c.setContent(html_2c3adf6bb6006ccf308d53e3bd44ecc2);
+            
+        
+
+        marker_187a74eadf2f6157d551bf099fc6d6a5.bindPopup(popup_56d3198dae674fe2f57c79554e026e6c)
+        ;
+
+        
+    
+    
+            var marker_44d07141eac8bea926758a7118d09bbc = L.marker(
+                [38.762, -9.17439],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_5a8aa691000961c706ae3e4aef589450 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_44d07141eac8bea926758a7118d09bbc.setIcon(icon_5a8aa691000961c706ae3e4aef589450);
+        
+    
+        var popup_9d89f61a47f398be9b45c9835976d9dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f3925be9d6b398078534f56a0b20d83 = $(`<div id="html_5f3925be9d6b398078534f56a0b20d83" style="width: 100.0%; height: 100.0%;">Address: Rua Professor Simoes Raposo 15, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_9d89f61a47f398be9b45c9835976d9dc.setContent(html_5f3925be9d6b398078534f56a0b20d83);
+            
+        
+
+        marker_44d07141eac8bea926758a7118d09bbc.bindPopup(popup_9d89f61a47f398be9b45c9835976d9dc)
+        ;
+
+        
+    
+    
+            var marker_8d170582ef2fcdee2d69ce4f60050247 = L.marker(
+                [38.75372, -9.16848],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_012c044c332bd4d6af93d4b1402df719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_8d170582ef2fcdee2d69ce4f60050247.setIcon(icon_012c044c332bd4d6af93d4b1402df719);
+        
+    
+        var popup_3a35de565a1f803de8e0a1d364dba1b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a02d01497be17aa8c00886486d4b0270 = $(`<div id="html_a02d01497be17aa8c00886486d4b0270" style="width: 100.0%; height: 100.0%;">Address: Rua Antonio Albino Machado 28-2, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_3a35de565a1f803de8e0a1d364dba1b3.setContent(html_a02d01497be17aa8c00886486d4b0270);
+            
+        
+
+        marker_8d170582ef2fcdee2d69ce4f60050247.bindPopup(popup_3a35de565a1f803de8e0a1d364dba1b3)
+        ;
+
+        
+    
+    
+            var marker_b80e97b388f13c99a29e3c2947aa9e07 = L.marker(
+                [38.74175, -9.17272],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_9cfd97ceb68a816b96cdc38d8f1c1d05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_b80e97b388f13c99a29e3c2947aa9e07.setIcon(icon_9cfd97ceb68a816b96cdc38d8f1c1d05);
+        
+    
+        var popup_b8becbce075d05a20010ce179aaba6c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_104508ddb43dc8f6c6d7fb677b27b710 = $(`<div id="html_104508ddb43dc8f6c6d7fb677b27b710" style="width: 100.0%; height: 100.0%;">Address: Rua Raul Carapinha, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_b8becbce075d05a20010ce179aaba6c1.setContent(html_104508ddb43dc8f6c6d7fb677b27b710);
+            
+        
+
+        marker_b80e97b388f13c99a29e3c2947aa9e07.bindPopup(popup_b8becbce075d05a20010ce179aaba6c1)
+        ;
+
+        
+    
+    
+            var marker_dc919d3eee6eaebf3a775cf659fdc975 = L.marker(
+                [38.75009, -9.16161],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_331f1f29c45ac6bda1562bcb5ab28583 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_dc919d3eee6eaebf3a775cf659fdc975.setIcon(icon_331f1f29c45ac6bda1562bcb5ab28583);
+        
+    
+        var popup_ed5f7bb8211f7ad52be5091adf5d9300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22ced5774c75e2350336a95d14c266b8 = $(`<div id="html_22ced5774c75e2350336a95d14c266b8" style="width: 100.0%; height: 100.0%;">Address: Avenida Professor Egas Moniz, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_ed5f7bb8211f7ad52be5091adf5d9300.setContent(html_22ced5774c75e2350336a95d14c266b8);
+            
+        
+
+        marker_dc919d3eee6eaebf3a775cf659fdc975.bindPopup(popup_ed5f7bb8211f7ad52be5091adf5d9300)
+        ;
+
+        
+    
+    
+            var marker_ad520c651064d1e6bb8b4b3e6a61ca0f = L.marker(
+                [38.74751, -9.18873],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_ddf4c6936c4059903955ad417b0db5b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ad520c651064d1e6bb8b4b3e6a61ca0f.setIcon(icon_ddf4c6936c4059903955ad417b0db5b6);
+        
+    
+        var popup_a581515fb89fac7cb11628f09f0e2280 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd98d4e62d389c19f6a3b852ef7d2d8 = $(`<div id="html_bdd98d4e62d389c19f6a3b852ef7d2d8" style="width: 100.0%; height: 100.0%;">Address: Rua Professor Reinaldo Dos Santos Lote 1, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_a581515fb89fac7cb11628f09f0e2280.setContent(html_bdd98d4e62d389c19f6a3b852ef7d2d8);
+            
+        
+
+        marker_ad520c651064d1e6bb8b4b3e6a61ca0f.bindPopup(popup_a581515fb89fac7cb11628f09f0e2280)
+        ;
+
+        
+    
+    
+            var marker_ae0c9d9e589259f88df09ee0f26e01d4 = L.marker(
+                [38.75406, -9.20565],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_89b166f74b3649cf0084a0c9e0f4e652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ae0c9d9e589259f88df09ee0f26e01d4.setIcon(icon_89b166f74b3649cf0084a0c9e0f4e652);
+        
+    
+        var popup_658ad930192a70f30f1c79d5b3fc7190 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e51a7ee852753a640eb88f7f52e9232d = $(`<div id="html_e51a7ee852753a640eb88f7f52e9232d" style="width: 100.0%; height: 100.0%;">Address: Rua Das Pedralvas 15, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_658ad930192a70f30f1c79d5b3fc7190.setContent(html_e51a7ee852753a640eb88f7f52e9232d);
+            
+        
+
+        marker_ae0c9d9e589259f88df09ee0f26e01d4.bindPopup(popup_658ad930192a70f30f1c79d5b3fc7190)
+        ;
+
+        
+    
+    
+            var marker_4abde60ddb0d1c15e6bf69e5f0a20028 = L.marker(
+                [38.73734, -9.16441],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_75b7ddf474f1aedfecad3af8f34cc711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_4abde60ddb0d1c15e6bf69e5f0a20028.setIcon(icon_75b7ddf474f1aedfecad3af8f34cc711);
+        
+    
+        var popup_e596f18510b69662b6d3794a5a2cfeff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01e1395f4294331fd964ae5e32901af6 = $(`<div id="html_01e1395f4294331fd964ae5e32901af6" style="width: 100.0%; height: 100.0%;">Address: Avenida Jose Malhoa 195, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_e596f18510b69662b6d3794a5a2cfeff.setContent(html_01e1395f4294331fd964ae5e32901af6);
+            
+        
+
+        marker_4abde60ddb0d1c15e6bf69e5f0a20028.bindPopup(popup_e596f18510b69662b6d3794a5a2cfeff)
+        ;
+
+        
+    
+    
+            var marker_2df5a3af58155bdb76d71232bdc276eb = L.marker(
+                [38.77697, -9.11965],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_72319d9c154dda9895cf684885bbb89d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_2df5a3af58155bdb76d71232bdc276eb.setIcon(icon_72319d9c154dda9895cf684885bbb89d);
+        
+    
+        var popup_2d70865604f9a11ebc3175c572ea0565 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c44bb9d2b6552eb1acab46a0104cf3e1 = $(`<div id="html_c44bb9d2b6552eb1acab46a0104cf3e1" style="width: 100.0%; height: 100.0%;">Address: Praca Norte 6, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_2d70865604f9a11ebc3175c572ea0565.setContent(html_c44bb9d2b6552eb1acab46a0104cf3e1);
+            
+        
+
+        marker_2df5a3af58155bdb76d71232bdc276eb.bindPopup(popup_2d70865604f9a11ebc3175c572ea0565)
+        ;
+
+        
+    
+    
+            var marker_dcb68e5b80fb575c0cff3fd56d1afcf4 = L.marker(
+                [38.77697, -9.11965],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_e34ddc68e7453d957ced4f6b089a7e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_dcb68e5b80fb575c0cff3fd56d1afcf4.setIcon(icon_e34ddc68e7453d957ced4f6b089a7e5f);
+        
+    
+        var popup_f3570003a662486c48caed494ed5e726 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62acd1764cddcdd394840c63305bed14 = $(`<div id="html_62acd1764cddcdd394840c63305bed14" style="width: 100.0%; height: 100.0%;">Address: Praca Norte 6, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_f3570003a662486c48caed494ed5e726.setContent(html_62acd1764cddcdd394840c63305bed14);
+            
+        
+
+        marker_dcb68e5b80fb575c0cff3fd56d1afcf4.bindPopup(popup_f3570003a662486c48caed494ed5e726)
+        ;
+
+        
+    
+    
+            var marker_8d140bc1eabb03aa5f29592ab4676020 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_dde0cc8bba5b290eb32d5100e447f6ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_8d140bc1eabb03aa5f29592ab4676020.setIcon(icon_dde0cc8bba5b290eb32d5100e447f6ba);
+        
+    
+        var popup_fd67b166b8381112cd2b80e9c75180a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03c5ef8b08cfc3e11f9fd26e35cc85bb = $(`<div id="html_03c5ef8b08cfc3e11f9fd26e35cc85bb" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_fd67b166b8381112cd2b80e9c75180a9.setContent(html_03c5ef8b08cfc3e11f9fd26e35cc85bb);
+            
+        
+
+        marker_8d140bc1eabb03aa5f29592ab4676020.bindPopup(popup_fd67b166b8381112cd2b80e9c75180a9)
+        ;
+
+        
+    
+    
+            var marker_10277a5fb5c077942de5fbd311bff5ea = L.marker(
+                [38.77697, -9.11965],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_4bd647d6ddfabbf88150f39ddce14efe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_10277a5fb5c077942de5fbd311bff5ea.setIcon(icon_4bd647d6ddfabbf88150f39ddce14efe);
+        
+    
+        var popup_eff73ce1da3d0910734a86ec1ba6fcff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8588643123e4db01e24ad5050c166a9d = $(`<div id="html_8588643123e4db01e24ad5050c166a9d" style="width: 100.0%; height: 100.0%;">Address: Praca Norte 6, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_eff73ce1da3d0910734a86ec1ba6fcff.setContent(html_8588643123e4db01e24ad5050c166a9d);
+            
+        
+
+        marker_10277a5fb5c077942de5fbd311bff5ea.bindPopup(popup_eff73ce1da3d0910734a86ec1ba6fcff)
+        ;
+
+        
+    
+    
+            var marker_9445646fd2e46315c65df35c02090a1a = L.marker(
+                [38.75496, -9.16612],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_2fd4b9d6ab53860d230df9e72ee02fad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_9445646fd2e46315c65df35c02090a1a.setIcon(icon_2fd4b9d6ab53860d230df9e72ee02fad);
+        
+    
+        var popup_612a614512fb3387266b9f3d659d5cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b441e517fd26b4fbc9b6b337f3335069 = $(`<div id="html_b441e517fd26b4fbc9b6b337f3335069" style="width: 100.0%; height: 100.0%;">Address: Azinhaga Galhardas 33, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_612a614512fb3387266b9f3d659d5cb0.setContent(html_b441e517fd26b4fbc9b6b337f3335069);
+            
+        
+
+        marker_9445646fd2e46315c65df35c02090a1a.bindPopup(popup_612a614512fb3387266b9f3d659d5cb0)
+        ;
+
+        
+    
+    
+            var marker_84de8595277aa96cab34ee84428288ff = L.marker(
+                [38.74751, -9.18873],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_1e06a4790a69082829545c0c0c1c9ffc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_84de8595277aa96cab34ee84428288ff.setIcon(icon_1e06a4790a69082829545c0c0c1c9ffc);
+        
+    
+        var popup_770914ce27bbc5c1112a3f06db0ebcee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_488f257607eca1535884088ccc7ea6ca = $(`<div id="html_488f257607eca1535884088ccc7ea6ca" style="width: 100.0%; height: 100.0%;">Address: Rua Professor Reinaldo Dos Santos Lote 1, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_770914ce27bbc5c1112a3f06db0ebcee.setContent(html_488f257607eca1535884088ccc7ea6ca);
+            
+        
+
+        marker_84de8595277aa96cab34ee84428288ff.bindPopup(popup_770914ce27bbc5c1112a3f06db0ebcee)
+        ;
+
+        
+    
+    
+            var marker_6449bec81775d7329c2a622882acdc50 = L.marker(
+                [38.76161, -9.17096],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_051b7f5669b2810e1287322a3aa11655 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6449bec81775d7329c2a622882acdc50.setIcon(icon_051b7f5669b2810e1287322a3aa11655);
+        
+    
+        var popup_ae4fe2620be6c7efbd80f7f47db0541b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f2586148e9143ca0b6b75877b8282ad = $(`<div id="html_4f2586148e9143ca0b6b75877b8282ad" style="width: 100.0%; height: 100.0%;">Address: Rua Professor Joao Barreira 1-1a, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_ae4fe2620be6c7efbd80f7f47db0541b.setContent(html_4f2586148e9143ca0b6b75877b8282ad);
+            
+        
+
+        marker_6449bec81775d7329c2a622882acdc50.bindPopup(popup_ae4fe2620be6c7efbd80f7f47db0541b)
+        ;
+
+        
+    
+    
+            var marker_8a7bd363e02363d3c5fccef151278c10 = L.marker(
+                [38.75009, -9.16161],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_5446806e075c0abbeff4a8415a9268a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_8a7bd363e02363d3c5fccef151278c10.setIcon(icon_5446806e075c0abbeff4a8415a9268a5);
+        
+    
+        var popup_a53ca408242260367482ebdc60aea7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5286b89b5c6d32b23d886377e6068e10 = $(`<div id="html_5286b89b5c6d32b23d886377e6068e10" style="width: 100.0%; height: 100.0%;">Address: Avenida Professor Egas Moniz, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_a53ca408242260367482ebdc60aea7a0.setContent(html_5286b89b5c6d32b23d886377e6068e10);
+            
+        
+
+        marker_8a7bd363e02363d3c5fccef151278c10.bindPopup(popup_a53ca408242260367482ebdc60aea7a0)
+        ;
+
+        
+    
+    
+            var marker_451c38bb9fdd180431972db284d1fd79 = L.marker(
+                [38.74923, -9.16603],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_d4aac3bba7c0d2346cb475b192653175 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_451c38bb9fdd180431972db284d1fd79.setIcon(icon_d4aac3bba7c0d2346cb475b192653175);
+        
+    
+        var popup_0244ffe1b88973b8f8c392464f53645f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b17bbdb29ab99854cc19b10135c0908a = $(`<div id="html_b17bbdb29ab99854cc19b10135c0908a" style="width: 100.0%; height: 100.0%;">Address: Palma De Cima, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_0244ffe1b88973b8f8c392464f53645f.setContent(html_b17bbdb29ab99854cc19b10135c0908a);
+            
+        
+
+        marker_451c38bb9fdd180431972db284d1fd79.bindPopup(popup_0244ffe1b88973b8f8c392464f53645f)
+        ;
+
+        
+    
+    
+            var marker_19a60b62f71e4096b81fadf598d59a39 = L.marker(
+                [38.74923, -9.16603],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_8bd9b0f46115402097e30ae4f312e820 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_19a60b62f71e4096b81fadf598d59a39.setIcon(icon_8bd9b0f46115402097e30ae4f312e820);
+        
+    
+        var popup_1422aba295e9b7df82c9843eff554156 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad419f89b9d9f378636127a822553f30 = $(`<div id="html_ad419f89b9d9f378636127a822553f30" style="width: 100.0%; height: 100.0%;">Address: Palma De Cima, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_1422aba295e9b7df82c9843eff554156.setContent(html_ad419f89b9d9f378636127a822553f30);
+            
+        
+
+        marker_19a60b62f71e4096b81fadf598d59a39.bindPopup(popup_1422aba295e9b7df82c9843eff554156)
+        ;
+
+        
+    
+    
+            var marker_6a14dac14e8ca748ebbead37ada99e96 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_04de62954002bbfa314ab3f845f8ecb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6a14dac14e8ca748ebbead37ada99e96.setIcon(icon_04de62954002bbfa314ab3f845f8ecb9);
+        
+    
+        var popup_146e65c2765dd657148ad43883e6115d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80a3832de7869acbb45680ef990baf83 = $(`<div id="html_80a3832de7869acbb45680ef990baf83" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_146e65c2765dd657148ad43883e6115d.setContent(html_80a3832de7869acbb45680ef990baf83);
+            
+        
+
+        marker_6a14dac14e8ca748ebbead37ada99e96.bindPopup(popup_146e65c2765dd657148ad43883e6115d)
+        ;
+
+        
+    
+    
+            var marker_fbe03e19e2a047f529751ea92414b739 = L.marker(
+                [38.75554, -9.17678],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_3a687cf8a1e9148c494533f41029b563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_fbe03e19e2a047f529751ea92414b739.setIcon(icon_3a687cf8a1e9148c494533f41029b563);
+        
+    
+        var popup_4135bc593f987681100ba0438724bc29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bd93e5e5e0c3e98d06923be37e4d81a = $(`<div id="html_4bd93e5e5e0c3e98d06923be37e4d81a" style="width: 100.0%; height: 100.0%;">Address: Estrada Da Luz 177 a, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_4135bc593f987681100ba0438724bc29.setContent(html_4bd93e5e5e0c3e98d06923be37e4d81a);
+            
+        
+
+        marker_fbe03e19e2a047f529751ea92414b739.bindPopup(popup_4135bc593f987681100ba0438724bc29)
+        ;
+
+        
+    
+    
+            var marker_3e182368b28568f7826a5864af76c140 = L.marker(
+                [38.76319, -9.14026],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_e77674f7e377d78868c27a25b0d64731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_3e182368b28568f7826a5864af76c140.setIcon(icon_e77674f7e377d78868c27a25b0d64731);
+        
+    
+        var popup_9f5e05530e7045e0a6a77bfdc7cb79c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e396351723a1bb0aa4dc9adf74f8dea1 = $(`<div id="html_e396351723a1bb0aa4dc9adf74f8dea1" style="width: 100.0%; height: 100.0%;">Address: Avenida Marechal Craveiro Lopes, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_9f5e05530e7045e0a6a77bfdc7cb79c4.setContent(html_e396351723a1bb0aa4dc9adf74f8dea1);
+            
+        
+
+        marker_3e182368b28568f7826a5864af76c140.bindPopup(popup_9f5e05530e7045e0a6a77bfdc7cb79c4)
+        ;
+
+        
+    
+    
+            var marker_2218c0c9a3bc0d6d3396b3647e44390b = L.marker(
+                [38.747, -9.18781],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_dbdcedf963fcc104b85641441a64e730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_2218c0c9a3bc0d6d3396b3647e44390b.setIcon(icon_dbdcedf963fcc104b85641441a64e730);
+        
+    
+        var popup_95bc1f2d7a542bd0fc0ddd470b6cdc7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb6987216f30b51b13a8f13d5a6127c8 = $(`<div id="html_cb6987216f30b51b13a8f13d5a6127c8" style="width: 100.0%; height: 100.0%;">Address: Estrada Benfica 158, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_95bc1f2d7a542bd0fc0ddd470b6cdc7f.setContent(html_cb6987216f30b51b13a8f13d5a6127c8);
+            
+        
+
+        marker_2218c0c9a3bc0d6d3396b3647e44390b.bindPopup(popup_95bc1f2d7a542bd0fc0ddd470b6cdc7f)
+        ;
+
+        
+    
+    
+            var marker_779a30c2b44dd9ecd050aace7168ec68 = L.marker(
+                [38.75235, -9.20414],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_900d04de4f0448327336f8adbaabf5d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_779a30c2b44dd9ecd050aace7168ec68.setIcon(icon_900d04de4f0448327336f8adbaabf5d9);
+        
+    
+        var popup_c1acc3dbf7f301ea9a3ee5b77576bfdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_801c4835bbc9b1649e71f06490d96161 = $(`<div id="html_801c4835bbc9b1649e71f06490d96161" style="width: 100.0%; height: 100.0%;">Address: Rua Amelia Rey Colaco 3, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_c1acc3dbf7f301ea9a3ee5b77576bfdd.setContent(html_801c4835bbc9b1649e71f06490d96161);
+            
+        
+
+        marker_779a30c2b44dd9ecd050aace7168ec68.bindPopup(popup_c1acc3dbf7f301ea9a3ee5b77576bfdd)
+        ;
+
+        
+    
+    
+            var marker_335b845bd2a9fb13f7956879e33b25d1 = L.marker(
+                [38.75002, -9.18017],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_be004279e46dc50171e6f53cbb5f362d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_335b845bd2a9fb13f7956879e33b25d1.setIcon(icon_be004279e46dc50171e6f53cbb5f362d);
+        
+    
+        var popup_5c79cde634306ece52f5bab9fe694a44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca58b24af2cabd2e2bfc65859bc3a929 = $(`<div id="html_ca58b24af2cabd2e2bfc65859bc3a929" style="width: 100.0%; height: 100.0%;">Address: Avenida Lusiada, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_5c79cde634306ece52f5bab9fe694a44.setContent(html_ca58b24af2cabd2e2bfc65859bc3a929);
+            
+        
+
+        marker_335b845bd2a9fb13f7956879e33b25d1.bindPopup(popup_5c79cde634306ece52f5bab9fe694a44)
+        ;
+
+        
+    
+    
+            var marker_2e427a195a0dd23e2230898cdb6a78c6 = L.marker(
+                [38.75028, -9.17287],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_34ab92c61f6bcdf288c4a842be23883f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_2e427a195a0dd23e2230898cdb6a78c6.setIcon(icon_34ab92c61f6bcdf288c4a842be23883f);
+        
+    
+        var popup_e0249a02b821763da3eae51d48770d44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c46f4b595fd14572901c691c2105dd99 = $(`<div id="html_c46f4b595fd14572901c691c2105dd99" style="width: 100.0%; height: 100.0%;">Address: Estrada Luz 90, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_e0249a02b821763da3eae51d48770d44.setContent(html_c46f4b595fd14572901c691c2105dd99);
+            
+        
+
+        marker_2e427a195a0dd23e2230898cdb6a78c6.bindPopup(popup_e0249a02b821763da3eae51d48770d44)
+        ;
+
+        
+    
+    
+            var marker_013eedb3720f491a8b3bfd1ea3f9fc7d = L.marker(
+                [38.74751, -9.18873],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_783678a403d03909a139f98229f54636 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_013eedb3720f491a8b3bfd1ea3f9fc7d.setIcon(icon_783678a403d03909a139f98229f54636);
+        
+    
+        var popup_a244fc5b24199eba16f1035eafe7c92c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f15a5eaad50578c1042dc0e6be2a88fb = $(`<div id="html_f15a5eaad50578c1042dc0e6be2a88fb" style="width: 100.0%; height: 100.0%;">Address: Rua Professor Reinaldo Dos Santos Lote 1, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_a244fc5b24199eba16f1035eafe7c92c.setContent(html_f15a5eaad50578c1042dc0e6be2a88fb);
+            
+        
+
+        marker_013eedb3720f491a8b3bfd1ea3f9fc7d.bindPopup(popup_a244fc5b24199eba16f1035eafe7c92c)
+        ;
+
+        
+    
+    
+            var marker_4c7da0b43892953a4065321826af5b19 = L.marker(
+                [38.74395, -9.17723],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_aa26592ab3c8aa544b23d9c0add0cac5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_4c7da0b43892953a4065321826af5b19.setIcon(icon_aa26592ab3c8aa544b23d9c0add0cac5);
+        
+    
+        var popup_2e1be1c9277189c4fcf621a68801d408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7093bb98ce9af1588f7a5e0494dbc74b = $(`<div id="html_7093bb98ce9af1588f7a5e0494dbc74b" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 310-336, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_2e1be1c9277189c4fcf621a68801d408.setContent(html_7093bb98ce9af1588f7a5e0494dbc74b);
+            
+        
+
+        marker_4c7da0b43892953a4065321826af5b19.bindPopup(popup_2e1be1c9277189c4fcf621a68801d408)
+        ;
+
+        
+    
+    
+            var marker_60ef66b7bd48ade02ab69a321098e9d6 = L.marker(
+                [38.76319, -9.14026],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_c38de27e9e5ad169567739b867067d3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_60ef66b7bd48ade02ab69a321098e9d6.setIcon(icon_c38de27e9e5ad169567739b867067d3a);
+        
+    
+        var popup_ad52dc01851f6c67ddb466adce2cda07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a0e3d02f0cf98e8dff218dd1cf34028 = $(`<div id="html_7a0e3d02f0cf98e8dff218dd1cf34028" style="width: 100.0%; height: 100.0%;">Address: Avenida Marechal Craveiro Lopes, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_ad52dc01851f6c67ddb466adce2cda07.setContent(html_7a0e3d02f0cf98e8dff218dd1cf34028);
+            
+        
+
+        marker_60ef66b7bd48ade02ab69a321098e9d6.bindPopup(popup_ad52dc01851f6c67ddb466adce2cda07)
+        ;
+
+        
+    
+    
+            var marker_ab07300f44567b1658a0537f147ac950 = L.marker(
+                [38.75746, -9.17209],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_44637a935d1a25818556758daeec2100 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ab07300f44567b1658a0537f147ac950.setIcon(icon_44637a935d1a25818556758daeec2100);
+        
+    
+        var popup_2b72e85824ea7e9135354b4be341e41e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47caecbd306cd78103d169e9cc1dbc6c = $(`<div id="html_47caecbd306cd78103d169e9cc1dbc6c" style="width: 100.0%; height: 100.0%;">Address: Acesso Da Avenida General Norton De Matos, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_2b72e85824ea7e9135354b4be341e41e.setContent(html_47caecbd306cd78103d169e9cc1dbc6c);
+            
+        
+
+        marker_ab07300f44567b1658a0537f147ac950.bindPopup(popup_2b72e85824ea7e9135354b4be341e41e)
+        ;
+
+        
+    
+    
+            var marker_5d92af64fba884e20046661d881b74ef = L.marker(
+                [38.75864, -9.14138],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_b5a47c52108dae3f9c81ae9678c59bdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5d92af64fba884e20046661d881b74ef.setIcon(icon_b5a47c52108dae3f9c81ae9678c59bdb);
+        
+    
+        var popup_b74397c137aaaa2e7d1d67f9c30ce0eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14442e0114613e0e6360d206580b0611 = $(`<div id="html_14442e0114613e0e6360d206580b0611" style="width: 100.0%; height: 100.0%;">Address: Avenida Do Brasil 101, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_b74397c137aaaa2e7d1d67f9c30ce0eb.setContent(html_14442e0114613e0e6360d206580b0611);
+            
+        
+
+        marker_5d92af64fba884e20046661d881b74ef.bindPopup(popup_b74397c137aaaa2e7d1d67f9c30ce0eb)
+        ;
+
+        
+    
+    
+            var marker_42abba7aa2182d94630d44f26086cb5d = L.marker(
+                [38.75009, -9.16161],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_2da3241192dd1663109f0b1bf351d1cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_42abba7aa2182d94630d44f26086cb5d.setIcon(icon_2da3241192dd1663109f0b1bf351d1cf);
+        
+    
+        var popup_0ced2da8cc601576a8c8e163b9bc7b17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c907f363546e5cbbe82da17ce41a609 = $(`<div id="html_2c907f363546e5cbbe82da17ce41a609" style="width: 100.0%; height: 100.0%;">Address: Avenida Professor Egas Moniz, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_0ced2da8cc601576a8c8e163b9bc7b17.setContent(html_2c907f363546e5cbbe82da17ce41a609);
+            
+        
+
+        marker_42abba7aa2182d94630d44f26086cb5d.bindPopup(popup_0ced2da8cc601576a8c8e163b9bc7b17)
+        ;
+
+        
+    
+    
+            var marker_84fcd5cbddf6c2963dd92de4e148435b = L.marker(
+                [38.77632, -9.11905],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_48e2dbc251084ee4734f06fcb4ee329e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_84fcd5cbddf6c2963dd92de4e148435b.setIcon(icon_48e2dbc251084ee4734f06fcb4ee329e);
+        
+    
+        var popup_3dcc17b73f30b1850d17bb80ba5a2834 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f87f715a719dda0ef7e09d0712e7e7de = $(`<div id="html_f87f715a719dda0ef7e09d0712e7e7de" style="width: 100.0%; height: 100.0%;">Address: Circular Norte, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_3dcc17b73f30b1850d17bb80ba5a2834.setContent(html_f87f715a719dda0ef7e09d0712e7e7de);
+            
+        
+
+        marker_84fcd5cbddf6c2963dd92de4e148435b.bindPopup(popup_3dcc17b73f30b1850d17bb80ba5a2834)
+        ;
+
+        
+    
+    
+            var marker_3fef9b69d63dcda9e347a1982f138447 = L.marker(
+                [38.74395, -9.17723],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_2d4cf27c1bf99b3abd0bdbf55971bc69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_3fef9b69d63dcda9e347a1982f138447.setIcon(icon_2d4cf27c1bf99b3abd0bdbf55971bc69);
+        
+    
+        var popup_8eabd0f73acb8fa1b8f4dd3343d35b16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c8c8f963b6daa522a4353dfc9893411 = $(`<div id="html_0c8c8f963b6daa522a4353dfc9893411" style="width: 100.0%; height: 100.0%;">Address: Estrada De Benfica 310-336, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_8eabd0f73acb8fa1b8f4dd3343d35b16.setContent(html_0c8c8f963b6daa522a4353dfc9893411);
+            
+        
+
+        marker_3fef9b69d63dcda9e347a1982f138447.bindPopup(popup_8eabd0f73acb8fa1b8f4dd3343d35b16)
+        ;
+
+        
+    
+    
+            var marker_abd91c01c737d842b9de75c7987b22cd = L.marker(
+                [38.75493, -9.17621],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_55a6902df36f0ec7db11dbdca6b19f12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_abd91c01c737d842b9de75c7987b22cd.setIcon(icon_55a6902df36f0ec7db11dbdca6b19f12);
+        
+    
+        var popup_04ac48fb4e57f6d52bfced318b6fd876 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50fc83536e68ea5629871b2933c2e1b5 = $(`<div id="html_50fc83536e68ea5629871b2933c2e1b5" style="width: 100.0%; height: 100.0%;">Address: Estrada Da Luz 169 A/b, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_04ac48fb4e57f6d52bfced318b6fd876.setContent(html_50fc83536e68ea5629871b2933c2e1b5);
+            
+        
+
+        marker_abd91c01c737d842b9de75c7987b22cd.bindPopup(popup_04ac48fb4e57f6d52bfced318b6fd876)
+        ;
+
+        
+    
+    
+            var marker_f3191373c71534df62619ecfe7b287c4 = L.marker(
+                [38.69637, -9.22037],
+                {}
+            ).addTo(map_4ffcb05443c495f9ee3a50adc07a001d);
+        
+    
+            var icon_4ee63559530efd9c869d4ff5e022a83e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f3191373c71534df62619ecfe7b287c4.setIcon(icon_4ee63559530efd9c869d4ff5e022a83e);
+        
+    
+        var popup_00caf1d2cb7214d3994f53f26ae15757 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_867c10c0984f8b4fece67ef9d4021102 = $(`<div id="html_867c10c0984f8b4fece67ef9d4021102" style="width: 100.0%; height: 100.0%;">Address: Rua De Pedroucos, Lisbon<br>Frequency of Attack: 1</div>`)[0];
+                popup_00caf1d2cb7214d3994f53f26ae15757.setContent(html_867c10c0984f8b4fece67ef9d4021102);
+            
+        
+
+        marker_f3191373c71534df62619ecfe7b287c4.bindPopup(popup_00caf1d2cb7214d3994f53f26ae15757)
+        ;
+
+        
+    
+</script>
+</html>

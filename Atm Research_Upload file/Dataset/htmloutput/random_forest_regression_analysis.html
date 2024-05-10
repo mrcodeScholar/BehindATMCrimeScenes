@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Forest Regression Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #008cba;
+            margin-top: 30px;
+        }
+        p, ul {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Forest Regression Analysis</h1>
+    
+    <h2>Algorithm Used: Random Forest Regression</h2>
+    <p>Random Forest Regression is an ensemble learning method for regression that operates by constructing a multitude of decision trees during training and outputting the mean prediction of the individual trees.</p>
+
+    <h2>Mean Squared Error:</h2>
+    <p>The mean squared error (MSE) measures the average of the squares of the errors, or deviations, between the predicted values and the actual values. In this analysis, the MSE is approximately 0.0745.</p>
+
+    <h2>Feature Importances:</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Importance</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Income</td>
+            <td>0.02105665076978038</td>
+            <td>Income of the population. This value represents the relative importance of income in predicting the frequency of attacks.</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>0.01821362805371736</td>
+            <td>Average age of the population. This value indicates the relative importance of age in predicting the frequency of attacks.</td>
+        </tr>
+        <tr>
+            <td>Density</td>
+            <td>0.015645557791006924</td>
+            <td>Population density. This value reflects the relative importance of population density in predicting the frequency of attacks.</td>
+        </tr>
+        <tr>
+            <td>Unemployment Rate</td>
+            <td>0.022791941967180276</td>
+            <td>Percentage of unemployed individuals. This value shows the relative importance of unemployment rate in predicting the frequency of attacks.</td>
+        </tr>
+        <tr>
+            <td>Police Distance</td>
+            <td>0.30580343237310087</td>
+            <td>Distance from the nearest police station. This value represents the relative importance of police distance in predicting the frequency of attacks.</td>
+        </tr>
+        <tr>
+            <td>Motorway Distance</td>
+            <td>0.6148713186374983</td>
+            <td>Distance from the nearest motorway. This value indicates the relative importance of motorway distance in predicting the frequency of attacks.</td>
+        </tr>
+        <tr>
+            <td>Commercial Density</td>
+            <td>0.0016174704077160098</td>
+            <td>Density of commercial establishments. This value reflects the relative importance of commercial density in predicting the frequency of attacks.</td>
+        </tr>
+    </table>
+
+    <h2>Feature Importances Plot</h2>
+    <img src="feature_importances.png" alt="Feature Importances">
+</body>
+</html>

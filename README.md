@@ -23,8 +23,9 @@ graph TD;
 - **Data Preprocessing:** Cleanse and preprocess the dataset to rectify errors, handle missing values, and standardize formats.
 - **Exploratory Data Analysis (EDA):** Conduct exploratory analysis to understand the distribution of variables, identify correlations, and uncover insights into the data.
 - **Feature selection & Engineering:** Extract relevant features and engineer new variables to enhance predictive modeling. WEKA toolbox is used to achieve this.
+- **Visualization:** Visualize spatial distributions and predictive outcomes to facilitate interpretation and decision-making. The visual insights were found using Tableau and Python.
 - **Predictive Modeling:** Build Fuzzy inference system to predict the likelihood of ATM attacks based on the available data.
-- **Visualization:** Visualize spatial distributions and predictive outcomes to facilitate interpretation and decision-making. The visual insights were found using Tableau.
+
 
 ## 3. Visualization ( Tableau & Python) :
 Visualizations play a crucial role in conveying the findings of our analysis:
@@ -35,7 +36,6 @@ Visualizations play a crucial role in conveying the findings of our analysis:
 ## 4. Results:
 Analysis of the data yielded several noteworthy results:
 - **Geographical Distribution:** ATM attacks exhibit spatial clustering, with higher frequencies observed in certain regions, particularly those with closer proximity to highways and farther from police stations.
-- **Attack Types:** Certain attack types, such as explosive & gas and card skimming, demonstrate higher success rates and contribute to substantial financial losses compared to other methods like card and cash trapping.
 - **Rule derivation:** Machine learning models(Classification and regression tree) trained on historical data achieve promising results in predicting ATM attacks, with accuracy rates exceeding baseline levels.
 
 ## 5. Additional preventive measures
@@ -44,4 +44,4 @@ To prevent physical ATM attack different strategies must be implemented to safeg
   - Security fog: Hinders the visibility of attackers in case of an attack.
 
 ## 6. Conclusion:
-In conclusion, the research underscores the importance of data-driven approaches in addressing security challenges such as ATM attacks. By leveraging advanced analytics techniques, we have gained valuable insights into the underlying factors contributing to such incidents. Our findings not only shed light on the spatial and situational dynamics of ATM attacks but also provide a basis for developing proactive strategies to enhance security measures.
+In conclusion, the research underscores the importance of data-driven approaches in addressing security challenges such as ATM attacks. By leveraging advanced analytics techniques, we have gained valuable insights into the underlying factors contributing to such incidents. Our findings not only shed light on the spatial and situational dynamics of ATM attacks but also provides a basis for developing proactive strategies to enhance security measures.

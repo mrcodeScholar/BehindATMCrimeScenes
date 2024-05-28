@@ -1,0 +1,45 @@
+[System]
+Name='normalized_mamdanitype1'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=8
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Motorway distance'
+Range=[0 0.3]
+NumMFs=3
+MF1='Close':'sigmf',[-52.7523 0.1]
+MF2='moderate':'trapmf',[0.0310746499102334 0.109204649910233 0.159134649910233 0.237234649910233]
+MF3='far':'sigmf',[64.5087782233869 0.1733]
+
+[Input2]
+Name='police distance'
+Range=[0.2 0.65]
+NumMFs=3
+MF1='close':'sigmf',[-74.277 0.297]
+MF2='moderate':'trapmf',[0.2684 0.3241 0.4884 0.5691]
+MF3='far':'sigmf',[56.9247698586607 0.499101436265709]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=2
+MF1='No risk':'trimf',[0 0 0]
+MF2='High risk':'trimf',[1 1 1]
+
+[Rules]
+3 0, 1 (0.9) : 1
+2 1, 1 (0.8) : 1
+1 2, 2 (0.9) : 1
+2 2, 1 (0.7) : 1
+1 2, 2 (0.8) : 1
+2 2, 2 (0.3) : 1
+2 3, 2 (0.9) : 2
+3 1, 1 (0.9) : 2

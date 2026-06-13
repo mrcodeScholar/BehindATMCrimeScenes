@@ -1,0 +1,62 @@
+Loaded: 746 ATMs
+
+=== Criteria summary statistics ===
+        c_risk  c_access  c_manpower
+count  746.000   746.000     746.000
+mean     0.525     0.742       0.460
+std      0.167     0.147       0.170
+min      0.053     0.319       0.051
+25%      0.404     0.630       0.326
+50%      0.532     0.754       0.438
+75%      0.641     0.864       0.562
+max      1.000     0.941       1.000
+
+=== Fuzzy measure monotonicity check ===
+All monotonicity constraints satisfied: True
+
+Choquet score range: 0.237 — 0.951
+Mean: 0.569
+
+=== Parish Choquet scores (worst to best) ===
+                         n_atms  attack_rate  mean_risk  mean_access  mean_choquet
+freguesia                                                                         
+São Domingos de Benfica       2        0.500      0.906        0.719         0.869
+Carnide                      54        0.444      0.702        0.745         0.700
+Lumiar                       62        0.306      0.676        0.781         0.691
+Olivais                      29        0.103      0.641        0.830         0.678
+Campolide                    33        0.242      0.611        0.773         0.640
+Alcântara                    22        0.000      0.630        0.716         0.633
+Benfica                      21        0.286      0.665        0.597         0.632
+Belém                        23        0.087      0.579        0.812         0.626
+Alvalade                     45        0.089      0.607        0.693         0.619
+Parque das Nações            49        0.020      0.544        0.788         0.599
+Marvila                      27        0.000      0.527        0.816         0.599
+Campo de Ourique             35        0.057      0.591        0.636         0.587
+Avenidas Novas              125        0.128      0.527        0.752         0.572
+Estrela                      11        0.000      0.503        0.797         0.566
+Santo António                46        0.022      0.435        0.797         0.514
+Areeiro                       8        0.000      0.413        0.706         0.481
+Misericórdia                 15        0.000      0.362        0.826         0.470
+Arroios                      66        0.000      0.323        0.761         0.426
+São Vicente                   6        0.000      0.243        0.820         0.405
+Penha de França               7        0.000      0.264        0.627         0.357
+Santa Maria Maior            60        0.017      0.270        0.602         0.347
+
+Saved: choquet_parish.csv
+
+=== Validation ===
+5 worst: ['São Domingos de Benfica', 'Carnide', 'Lumiar', 'Olivais', 'Campolide']
+5 best:  ['Misericórdia', 'Arroios', 'São Vicente', 'Penha de França', 'Santa Maria Maior']
+Carnide in worst 5: True
+Lumiar  in worst 5: True
+
+Saved: choquet_parish.png
+
+=== Choquet vs Attack Rate correlation ===
+Pearson  r   = 0.751  (p=0.0001)
+Spearman rho = 0.760  (p=0.0001)
+
+=== Spearman: Choquet ranking vs Weighted Average ranking ===
+Spearman rho (Choquet rank vs attack rate rank) = 0.760 (p=0.0001)
+
+ALL DONE.

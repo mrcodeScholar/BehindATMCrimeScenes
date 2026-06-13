@@ -1,0 +1,8 @@
+Feature,Pearson r,Pearson sig,Spearman rho,Spearman sig,Mutual Info
+Mway,-0.406,***,-0.452,***,0.1715
+Pdis,0.433,***,0.409,***,0.1582
+Income,0.008,ns,0.009,ns,0.0467
+Density,0.068,ns,0.035,ns,0.0868
+Age,-0.26,***,-0.261,***,0.0437
+Unp-rate,-0.043,ns,-0.05,ns,0.0321
+Com-dens,-0.169,***,-0.177,***,0.0271
